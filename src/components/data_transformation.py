@@ -50,8 +50,8 @@ class DataTransformation():
                 ]
             )
 
-            logging.info('Numerical features standard scaling completed!')
-            logging.info('Categorical features encoding completed!')
+            logging.info(f'Numerical features standard scaling completed! {numerical_features}')
+            logging.info(f'Categorical features encoding completed! {categorical_features}')
 
             preprocessor = ColumnTransformer(
                 [
